@@ -5,21 +5,21 @@
 class JrnlSync < Formula
   desc "Faciliatates automatic sync of jrnl notes to external sources"
   homepage "https://www.github.com/jm96441n/jrnlSync"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.1/jrnlSync_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "915a80a87586d59a49689740eed22a34e6556789d4e694b2e27e6b39276ce2e2"
+      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.2/jrnlSync_1.0.2_Darwin_arm64.tar.gz"
+      sha256 "8ae05853b4190b450931080c26d40811bd5fa5346d51ad67bb097f1e78c99f9e"
 
       def install
         bin.install "jrnlSync"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.1/jrnlSync_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "5983a1a9c8bbe31a620be2a634aede9f912e9d8793a04fa4547614a140d02a35"
+      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.2/jrnlSync_1.0.2_Darwin_x86_64.tar.gz"
+      sha256 "42c05126c3950ea5c3a18b58c27178d726b885e73a3600170a841d56716c624f"
 
       def install
         bin.install "jrnlSync"
@@ -29,16 +29,16 @@ class JrnlSync < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.1/jrnlSync_1.0.1_Linux_arm64.tar.gz"
-      sha256 "9e7e1256a2901b00146395d290bfe0444c6dbc5fc71326e8f1c497ae1b5e7395"
+      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.2/jrnlSync_1.0.2_Linux_arm64.tar.gz"
+      sha256 "9f3aa6974e6b6ee53eeba3c42c02452f508dc5708dc667719dc5d33ae42f21cc"
 
       def install
         bin.install "jrnlSync"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.1/jrnlSync_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "3e4875da4defa0f4441414a36b6879e9c52bffd8e39d17b7158fd56861aa081d"
+      url "http://github.com/jm96441n/jrnlSync/releases/v1.0.2/jrnlSync_1.0.2_Linux_x86_64.tar.gz"
+      sha256 "93137b5e0cc20d84a9c7b34c8d62f1e16d8c5efc1f4975102df4e029440437c0"
 
       def install
         bin.install "jrnlSync"
